@@ -1,3 +1,9 @@
+var loader = document.getElementById("preloader");
+window.addEventListener("load", function(){
+    setTimeout.setTimeout(function(){
+        loader.style.display = "none" ;
+    }, 1500);
+});
 let nemuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
