@@ -1,9 +1,8 @@
-var loader = document.getElementById("preloader");
-window.addEventListener("load", function(){
-    setTimeout.setTimeout(function(){
-        loader.style.display = "none" ;
-    }, 1500);
-});
+function hideLoader() {
+    $('#loading').hide();
+}
+$(window).ready(hideLoader);
+setTimeout(hideLoader, 20 * 1000);
 let nemuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
