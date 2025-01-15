@@ -56,6 +56,11 @@ section{
 .navbar a.active{
     color: var(--main-color);
 }
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
 .home{
     justify-content: center;
     display: flex;
@@ -239,7 +244,7 @@ span {
         padding: 2rem 3%;
     }
     section {
-    padding: 7rem;
+    padding: 10rem 3%;
     }
     .project {
         padding-bottom: 7rem;
@@ -252,11 +257,18 @@ span {
     }
 }
 @media (max-width: 768px) {
-    #menu-icon {
-        display: block;
-    }
     .home {
         flex-direction: column;
+    }
+    .home-content h1 {
+        font-size: 5rem;
+    }
+    .home-content {
+        order: 2;
+    }
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
     }
     .navbar {
         position: absolute;
@@ -276,24 +288,14 @@ span {
         font-size: 2rem;
         margin: 3rem 0;
     }
-    .home-content h3 {
-        font-size: 2.6rem;
-    }
     .home-content h1 {
         font-size: 5rem;
     }
     .home-content {
         order: 2;
     }
-    .home-img img {
+    .home-img img{
         width: 70vw;
-        margin-top: 4rem;
-    }
-    .about {
-        flex-direction: column;
-    }
-    .about-img img {
-        width: 90vw;
         margin-top: 4rem;
     }
     .project h2 {
@@ -310,10 +312,6 @@ span {
     .home-img img {
         width: 80vw;
         margin-top: 8rem;
-    }
-    .about-img img {
-        width: 100vw;
-        margin-top: 4rem;
     }
 }
 @media (max-width: 450px) {
